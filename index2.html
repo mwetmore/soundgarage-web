@@ -1,0 +1,8 @@
+---
+layout: default.liquid
+pageTitle: Sound Garage Blog
+---
+{% for blog in collections.blogs %}
+    <h2><a href="{{ blog.url }}">{{ blog.data.pageTitle }}</a></h2>
+    <em>{{ blog.date | date: "%Y-%m-%d" }}</em>
+{% endfor %}
