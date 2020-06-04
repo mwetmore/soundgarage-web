@@ -1,3 +1,6 @@
 node_modules
 _site
 soundgarage.code-workspace
+
+# Local Netlify folder
+.netlify
