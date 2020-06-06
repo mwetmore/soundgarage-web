@@ -3,11 +3,15 @@
     <head>
         <meta charset="utf-8">
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-        <title>SoundGarage Blog</title>
+        <title>{{ title }}</title>
     </head>
     <body>
-        <h1>{{ pageTitle }}</h1>
-
+        <h1>{{ title }}</h1>
+        <p>ShortTitle: {{ shortTitle }}</p>
+        <p>Description: {{ description }}</p>
+        <p>Authord By: {{ authoredBy }}</p>
+        <p>Published Date: {{ date }}</p>
+        <p>Main Image: <img src="{{ thumbnail }}"/></p>
         {{ content }}
     </body>
 </html>
