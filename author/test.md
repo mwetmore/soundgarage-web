@@ -1,10 +1,10 @@
 ---
-fullName: Test
-handle: Test
+fullName: Name Field
+handle: test
 headShot: /img/uploads/1929659_506874971912_6186_n.jpg
-twitter: Test
-instagram: Test
-spotify: TestT
-website: Test
+twitter: "@username"
+instagram: instagram
+spotify: spotify
+website: website
 ---
-Test
+This is the bio field
