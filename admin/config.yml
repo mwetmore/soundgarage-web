@@ -12,6 +12,8 @@ collections:
     label: "Blog Post" # Used in the UI
     folder: "blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
+    extension: md
+    format: frontmatter
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string", hint: "The title for the blog post, should be short and simple"}
@@ -25,13 +27,15 @@ collections:
     label: "Authors"
     folder: "author"
     create: true
+    extension: md
+    format: frontmatter
     identifier_field: fullName
-    slug: "{{ handle }}"
+    slug: "{{handle}}"
     fields: 
       - {label: "Name", name: "fullName", widget: "string", required: true}
       - {label: "Handle", name: "handle", widget: "string", required: true, hint: "Provide a handle to use, for example: username"}
       - {label: "Headshot", name: "headShot", widget: "image", allow_multiple: false, required: true, hint: "Headshot to display with your profile, will auto resize to square when displayed"}
-      - {label: "Bio", name: "bio", widget: "text", required: false, hint: "Write a short bio about yourself to let people know more about you."}
+      - {label: "Bio", name: "body", widget: "text", required: false, hint: "Write a short bio about yourself to let people know more about you."}
       - {label: "Twitter", name: "twitter", widget: "string", required: false, hint: "Provide your Twitter handle, for example: @user_name"}
       - {label: "Instagram", name: "instagram", widget: "string", hint: "Provide your Instagram handle, for example: user_name"}
       - {label: "Spotify", name: "spotify", widget: "string", hint: "Provide your Spotify handle, for example: user_name"}
