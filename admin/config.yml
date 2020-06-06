@@ -20,7 +20,7 @@ collections:
       - {label: "Authored By", name: "authoredBy", widget: "relation", collection: "authors", searchFields: ["fullName"], valueField: "fullName", displayFields: ["fullName"]}
       - {label: "Body", name: "body", widget: "markdown", hint: "Write your blog post here, can be as long as you want with basic formatting."}
       - {label: "Published Date", name: "date", widget: "datetime", hint: "When was this blog post pubished."}
-      - {label: "Main Image", name: "thumbnail", widget: "image", required: "false", hint: "Provide a main image for the blog post, displayed on homepage or other parts of the site."}
+      - {label: "Main Image", name: "thumbnail", widget: "image", required: false, hint: "Provide a main image for the blog post, displayed on homepage or other parts of the site."}
   - name: "authors"
     label: "Authors"
     folder: "author"
