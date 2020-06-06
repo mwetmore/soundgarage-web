@@ -6,3 +6,7 @@ pageTitle: Sound Garage Blog
     <h2><a href="{{ blog.url }}">{{ blog.data.pageTitle }}</a></h2>
     <em>{{ blog.date | date: "%Y-%m-%d" }}</em>
 {% endfor %}
+
+{% for author in collections.authors %}
+    <h2><a href="{{ author.url }}"></a>{{ author.data.fullName }}</a></h2>
+{% endfor %}

@@ -9,14 +9,29 @@ display_url: https://soundgarage.io
 logo_url: https://www.soundgarage.io/img/logo2.png
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
+    label: "Blog Post" # Used in the UI
     folder: "blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Page Title", name: "pageTitle", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Title", name: "title", widget: "string", hint: "The title for the blog post, should be short and simple"}
+      - {label: "Short Title", name: "shortTitle", widget: "string", hint: "A short title field that will be used in social"}
+      - {label: "Description", name: "description", widget: "text", hint: "A short description of the blog post, will be using in social"}
+      - {label: "Authored By", name: "authoredBy", widget: "relation", collection: "authors", searchFields: ["fullName"], valueField: "fullName", displayFields: ["fullName"]}
+      - {label: "Body", name: "body", widget: "markdown", hint: "Write your blog post here, can be as long as you want with basic formatting."}
+      - {label: "Published Date", name: "date", widget: "datetime", hint: "When was this blog post pubished."}
+      - {label: "Main Image", name: "thumbnail", widget: "image", required: "false", hint: "Provide a main image for the blog post, displayed on homepage or other parts of the site."}
+  - name: "authors"
+    label: "Authors"
+    folder: "author"
+    create: true
+    slug: "author/{{ handle }}"
+    fields: 
+      - {label: "Name", name: "fullName", widget: "string", required: true}
+      - {label: "Handle", name: "handle", widget: "string", required: true, hint: "Provide a handle to use, for example: username"}
+      - {label: "Headshot", name: "headShot", widget: "image", allow_multiple: false, required: true, hint: "Headshot to display with your profile, will auto resize to square when displayed"}
+      - {label: "Bio", name: "bio", widget: "text", required: false, hint: "Write a short bio about yourself to let people know more about you."}
+      - {label: "Twitter", name: "twitter", widget: "string", required: false, hint: "Provide your Twitter handle, for example: @user_name"}
+      - {label: "Instagram", name: "instagram", widget: "string", hint: "Provide your Instagram handle, for example: user_name"}
+      - {label: "Spotify", name: "spotify", widget: "string", hint: "Provide your Spotify handle, for example: user_name"}
+      - {label: "Website", name: "website", widget: "string", required: false, hint: "Provide a URL for your website or another website"}
