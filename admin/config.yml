@@ -51,7 +51,7 @@ collections:
         file: "_data/settings/navigation.json"
         description: "Primary Navigation Links"
         fields:
-          - name: primvay_navigation
+          - name: primary_navigation
             label: Primary Navigation
             label_singular: "Navigation Link"
             widget: list
