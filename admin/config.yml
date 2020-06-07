@@ -49,7 +49,7 @@ collections:
       - file: "_data/settings/navigation.json"
         label: "Primary Navigation"
         name: "primary_navigaton"
-        widget: list
+        widget: "list"
           fields:
             - {label: Label, name: label, widget: string}
             - {label: Path, name: path, widget: string}
