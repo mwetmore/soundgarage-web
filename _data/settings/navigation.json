@@ -1,4 +1,18 @@
 {
   "label": "Blog",
-  "path": "/blog"
+  "path": "/blog",
+  "primvay_navigation": [
+    {
+      "label": "Home",
+      "path": "/"
+    },
+    {
+      "label": "Blog",
+      "path": "/blog"
+    },
+    {
+      "label": "Videos",
+      "path": "/videos"
+    }
+  ]
 }
