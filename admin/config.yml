@@ -56,12 +56,12 @@ collections:
             label_singular: "Social Link"
             widget: list
             fields:
-              - {
-                  label: "Social Network", 
-                  name: "social_network", 
-                  widget: "select", 
-                  options: {label: "Facebook", value: "facebook"}
-                }
+              label: "Social Network"
+              name: "social_network"
+              widget: "select"
+              options: 
+                - {label: "Facebook", value: "facebook"}
+                - {label: "Twitter", value: "twitter"}
               - {label: "Social Handle", name: "social_handle", widget: "string"}
               - {label: "Social URL", name: "social_url", widget: "string"}
       - name: "primary_navigation"
