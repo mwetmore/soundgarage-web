@@ -50,6 +50,6 @@ collections:
         label: "Primary Navigation"
         name: "primary_navigaton"
         widget: "list"
-          fields:
-            - {label: Label, name: label, widget: string}
-            - {label: Path, name: path, widget: string}
+        fields:
+          - {label: Label, name: label, widget: string}
+          - {label: Path, name: path, widget: string}
