@@ -40,3 +40,16 @@ collections:
       - {label: "Instagram", name: "instagram", widget: "string", hint: "Provide your Instagram handle, for example: user_name"}
       - {label: "Spotify", name: "spotify", widget: "string", hint: "Provide your Spotify handle, for example: user_name"}
       - {label: "Website", name: "website", widget: "string", required: false, hint: "Provide a URL for your website or another website"}
+  - name: "settings"
+    label: "Settings"
+    extension: "json"
+    editor:
+      preview: false
+    files:
+      - file: "_data/settings/navigation.json"
+        label: "Primary Navigation"
+        name: "primary_navigaton"
+        widget: list
+          fields:
+            - {label: Label, name: label, widget: string}
+            - {label: Path, name: path, widget: string}
