@@ -46,22 +46,15 @@ collections:
     editor:
       preview: false
     files:
-      - file: "_data/settings/navigation.json"
+      - name: "primary_navigation"
         label: "Primary Navigation"
-        name: "primary_navigaton"
-        widget: "list"
+        file: "_data/settings/navigation.json"
+        description: "Primary Navigation Links"
         fields:
-          - {label: "Label", name: "label", widget: "string"}
-          - {label: "Path", name: "path", widget: "string"}
-      - name: "authors"
-        label: "Authors"
-        file: "_data/settings/authors.json"
-        description: "Author descriptions"
-        fields:
-          - name: authors
-            label: Authors
-            label_singular: "Author"
+          - name: primvay_navigation
+            label: Primary Navigation
+            label_singular: "Navigation Link"
             widget: list
             fields:
-              - {label: "Name", name: "name", widget: "string"}
-              - {label: "Description", name: "description", widget: "markdown"}
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Path", name: "path", widget: "string", hint: "Should start with / and be a valid path."}
