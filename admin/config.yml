@@ -41,11 +41,30 @@ collections:
       - {label: "Spotify", name: "spotify", widget: "string", hint: "Provide your Spotify handle, for example: user_name"}
       - {label: "Website", name: "website", widget: "string", required: false, hint: "Provide a URL for your website or another website"}
   - name: "settings"
-    label: "Settings"
+    label: "Site Settings"
     extension: "json"
     editor:
       preview: false
     files:
+      - name: "social_links"
+        label: "Social Links"
+        file: "_data/settings/social_links.json"
+        description: "Central location for the storage of all social links."
+        fields:
+          - name: social_links
+            label: Social Links
+            label_singular: "Social Link"
+            widget: list
+            fields:
+              - {
+                  label: "Social Network", 
+                  name: "social_network", 
+                  widget: "select", 
+                  options:
+                    - {label: "Facebook", value: "facebook"}
+                }
+              - {label: "Social Handle", name: "social_handle", widget: "string"}
+              - {label: "Social URL", name: "social_url", widget: "string"}
       - name: "primary_navigation"
         label: "Primary Navigation"
         file: "_data/settings/navigation.json"
