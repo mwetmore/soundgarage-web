@@ -46,6 +46,41 @@ collections:
     editor:
       preview: false
     files:
+      - name: "site_configuration"
+        label: "Site Configuration"
+        file: "_data/settings/site_configuration.json"
+        description: "Changing these settings have global impact on the site, only change these if you know what you are doing"
+        fields:
+          - {label: "Site Name", name: "siteName", widget: "string", required: true}
+          - {label: "Site Slogan", name: "siteSlogan", widget: "text", required: false}
+          - {label: "Copyright", name: "copyright", widget: "string", required: false}
+          - {label: "Site Logo", name: "siteLogo", widget: "image", required: false}
+          - {label: "Site Email", name: "siteEmail", widget: "string", required: false}
+      - name: "site_styles"
+        label: "Site Styles"
+        file: "_data/settings/site_styles.json"
+        description: "Tweak these settings to change how the site looks without having to touch any css."
+        fields:
+          - {label: "Border Radius", name: "border-radius", widget: "string", required: true}
+          - {label: "Box Shadow", name: "box-shadow", widget: "text", required: false}
+          - {label: "Color", name: "color", widget: "string", required: false}
+          - {label: "Color Accent", name: "color-accent", widget: "image", required: false}
+          - {label: "Color Background", name: "color-bg", widget: "string", required: false}
+          - {label: "Color Background Secondary", name: "color-bg-secondary", widget: "string", required: false}
+          - {label: "Color Secondary", name: "color-secondary", widget: "string", required: false}
+          - {label: "Color Secondary Accent", name: "color-secondary-accent", widget: "string", required: false}
+          - {label: "Color Shadow", name: "color-shadow", widget: "string", required: false}
+          - {label: "Color Text", name: "color-text", widget: "string", required: false}
+          - {label: "Color Text Secondary", name: "color-text-secondary", widget: "string", required: false}
+          - {label: "Font Family", name: "font-family", widget: "string", required: false}
+          - {label: "Hover Brightness", name: "hover-brightness", widget: "string", required: false}
+          - {label: "Justify Important", name: "justify-important", widget: "string", required: false}
+          - {label: "Justify Normal", name: "justify-normal", widget: "string", required: false}
+          - {label: "Line Height", name: "line-height", widget: "string", required: false}
+          - {label: "Card Width", name: "width-card", widget: "string", required: false}
+          - {label: "Card Width Medium", name: "width-card-medium", widget: "string", required: false}
+          - {label: "Card Width Wide", name: "width-card-wide", widget: "string", required: false}
+          - {label: "Content Width", name: "width-content", widget: "string", required: false}
       - name: "social_links"
         label: "Social Links"
         file: "_data/settings/social_links.json"
