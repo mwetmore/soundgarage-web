@@ -1,3 +1,7 @@
 {
-    
+  "siteName": "Sound Garage",
+  "siteSlogan": " Sound Garage is a place for all things music-related.  We will be posting plenty of music on a regular basis!",
+  "copyright": "Copyright 2020 Sound Garage",
+  "siteLogo": "/img/uploads/logo.png",
+  "siteEmail": "soundgarageio@gmail.com"
 }
