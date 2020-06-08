@@ -1,3 +1,19 @@
 {
-    
+  "social_links": [
+    {
+      "social_network": "facebook",
+      "social_handle": "soundgarageio",
+      "social_url": "https://www.facebook.com/soundgarageio"
+    },
+    {
+      "social_network": "twitter",
+      "social_url": "https://twitter.com/sndgarage",
+      "social_handle": "sndgarage"
+    },
+    {
+      "social_network": "instagram",
+      "social_url": "https://www.instagram.com/sndgarage/",
+      "social_handle": "sndgarage/"
+    }
+  ]
 }
