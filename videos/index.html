@@ -1,9 +1,9 @@
     {% include header %}
+        <h1 style="text-align:center;">Latest SoundGarage Videos</h1>
         <div class="videos">
             <ul>
-                {% for item in youtube limit:1 %}  
+                {% for item in youtube %}  
                 <li>
-                    <h3>{{ item.title }}</h3>
                     <div class='embed-container'>
                         <iframe
                         src="https://www.youtube.com/embed/{{ item.guid | slice: 9, 11 }}"
@@ -19,4 +19,3 @@
             </ul>
         </div>
         {% include footer %}
-

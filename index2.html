@@ -10,3 +10,13 @@ pageTitle: Sound Garage Blog
 {% for author in collections.authors %}
     <h2><a href="{{ author.url }}">{{ author.data.fullName }}</a></h2>
 {% endfor %}
+
+<ul>  
+    {% for item in youtube %}  
+    <li>
+      <a href="{{ item.title }}">{{ item.title }}</a>
+      <img src="{{ item.thumbnail }}"/>
+      <iframe src='https://www.youtube.com/embed/{{ item.guid | slice: 9, 11 }}' frameborder='0' allowfullscreen></iframe>
+    </li>  
+    {% endfor %}  
+  </ul>
