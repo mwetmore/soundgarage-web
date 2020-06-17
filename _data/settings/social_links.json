@@ -2,24 +2,24 @@
   "social_links": [
     {
       "published": true,
-      "social_network": "youtube",
+      "social_network": "Youtube",
       "social_handle": "sndgarage",
       "social_url": "https://www.youtube.com/channel/UCU3Pw2ONAZS0yieakt23KHQ"
     },
     {
-      "social_network": "instagram",
+      "social_network": "Instagram",
       "social_url": "https://www.instagram.com/sndgarage/",
       "social_handle": "sndgarage/",
       "published": true
     },
     {
-      "social_network": "facebook",
+      "social_network": "Facebook",
       "social_handle": "soundgarageio",
       "social_url": "https://www.facebook.com/soundgarageio",
       "published": true
     },
     {
-      "social_network": "twitter",
+      "social_network": "Twitter",
       "social_url": "https://twitter.com/sndgarage",
       "social_handle": "sndgarage",
       "published": true

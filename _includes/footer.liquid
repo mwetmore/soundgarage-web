@@ -1,0 +1,24 @@
+    <footer>
+        <p style="text-align:center;">
+        Follow Us
+        </p>
+        <p style="text-align:center;">
+            {% for social in settings.social_links.social_links %}
+                        <a target="_blank" rel="noopener noreferrer" href="{{ social.social_url }}"/>{{ social.social_network }}</a>
+            {% endfor %}
+        </p>
+    </footer>
+    <script>
+            if (window.netlifyIdentity) {
+              window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                  window.netlifyIdentity.on("login", () => {
+                    document.location.href = "/admin/";
+                  });
+                }
+              });
+            }
+          </script>
+    </body>
+
+</html>
