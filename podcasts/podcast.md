@@ -1,6 +1,7 @@
 ---
 permalink: /podcasts/feed.xml
 eleventyExcludeFromCollections: true
+layout: feeds.liquid
 ---
 
 <?xml version="1.0" encoding="utf-8"?>
