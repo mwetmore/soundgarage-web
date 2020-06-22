@@ -1,1 +1,6 @@
-{{ content }}
+{% include header %}
+<h2>{{ title }}</h2>
+<p>{{ description }}</p>
+<p>{{ date | date: "%a, %d %b %Y" }} </p>
+<p><a href="{{ fileURL }}">Download</a>
+{% include footer %}
