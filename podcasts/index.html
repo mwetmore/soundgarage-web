@@ -1,0 +1,14 @@
+---
+eleventyExcludeFromCollections: true
+---
+{% include header %}
+<h1 style="text-align:center;">Latest SoundGarage Podcasts</h1>
+<div class="podcasts">
+    <ul>
+        {% for podcast in collections.podcasts %}
+        <h2><a href="{{ podcast.url }}">{{ podcast.data.title }}</a></h2>
+        <em>{{ podcast.date | date: "%Y-%m-%d" }}</em>
+    {% endfor %}
+    </ul>
+</div>
+{% include footer %}
