@@ -13,7 +13,7 @@ layout: feeds.liquid
 <webMaster>soundgarageio+podcast@gmail.com (Sound Garage)</webMaster>
 <managingEditor>soundgarageio+podcast@gmail.com (Sound Garage)</managingEditor>
 <image>
-<url>https://www.soundgarage.io/img/logo2.png</url>
+<url>https://www.soundgarage.io/img/logo_large.jpg</url>
 <title>SoundGarage 2020 Logo</title>
 <link>https://www.soundgarage.io</link>
 </image>
@@ -26,14 +26,14 @@ layout: feeds.liquid
 </itunes:category>
 <itunes:keywords>music, records, collecting, audio</itunes:keywords>
 <itunes:explicit>no</itunes:explicit>
-<itunes:image href="https://www.soundgarage.io/img/logo2.png" />
+<itunes:image href="https://www.soundgarage.io/img/logo_large.jpg" />
 <atom:link href="http://www.soundgarage.io/podcasts/feed.xml" rel="self" type="application/rss+xml" />
 <pubDate>{{ "now" | date: "%a, %d %b %Y %H:%M:%S EST" }}</pubDate>
-<title>Verbose title of the podcast</title>
-<itunes:author>College, school, or department owning the podcast</itunes:author>
-<description>Verbose description of the podcast.</description>
-<itunes:summary>Duplicate of above verbose description.</itunes:summary>
-<itunes:subtitle>Short description of the podcast - 255 character max.</itunes:subtitle>
+<title>SoundGarage</title>
+<itunes:author>Mike, Joe, Eugene, Matt</itunes:author>
+<description>Sound Garage is a place for all things music related.</description>
+<itunes:summary>Sound Garage is a place for all things music related.</itunes:summary>
+<itunes:subtitle>Sound Garage is a place for all things music related. </itunes:subtitle>
 <lastBuildDate>{{ "now" | date: "%a, %d %b %Y %H:%M:%S EST" }}</lastBuildDate>
 {% for podcast in collections.podcasts %}
 <item>
