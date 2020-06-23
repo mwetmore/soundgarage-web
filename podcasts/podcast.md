@@ -38,10 +38,13 @@ layout: feeds.liquid
 {% for podcast in collections.podcasts %}
 <item>
 <title>{{ podcast.data.title }}</title>
+<link>{{ podcast.url }}</link>
 <description>{{ podcast.data.description }}</description>
 <itunes:summary>{{ podcast.data.summary }}</itunes:summary>
+<itunes:title>{{ podcast.data.title }}</itunes:title>
+<itunes:author>SndGarage</itunes:author>
+<content:encoded> <![CDATA[{{ podcast.data.body }}]]></content:encoded>
 <itunes:subtitle>{{ podcast.data.subTitle }}</itunes:subtitle>
-<itunesu:category itunesu:code="112" />
 <enclosure url="{{ podcast.data.fileURL }}" type="audio/mpeg" length="1" />
 <guid>{{ podcast.data.fileURL }}</guid>
 <itunes:duration>{{ podcast.data.duration }}</itunes:duration>
