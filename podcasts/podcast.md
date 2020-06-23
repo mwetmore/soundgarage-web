@@ -3,9 +3,8 @@ permalink: /podcasts/feed.xml
 eleventyExcludeFromCollections: true
 layout: feeds.liquid
 ---
-
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunesu="http://www.itunesu.com/feed" version="2.0">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
 <channel>
 <link>https://www.soundgarage.io</link>
 <language>en-us</language>
@@ -43,7 +42,7 @@ layout: feeds.liquid
 <itunes:summary>{{ podcast.data.summary }}</itunes:summary>
 <itunes:title>{{ podcast.data.title }}</itunes:title>
 <itunes:author>SndGarage</itunes:author>
-<content:encoded> <![CDATA[{{ podcast.data.body }}]]></content:encoded>
+<content:encoded><![CDATA[ {{ podcast.templateContent | safe }} ]]></content:encoded>
 <itunes:subtitle>{{ podcast.data.subTitle }}</itunes:subtitle>
 <enclosure url="{{ podcast.data.fileURL }}" type="audio/mpeg" length="1" />
 <guid>{{ podcast.data.fileURL }}</guid>
