@@ -24,7 +24,7 @@ collections:
       - {label: "Published Date", name: "date", widget: "datetime", hint: "When was this blog post pubished."}
       - {label: "Main Image", name: "thumbnail", widget: "image", required: false, hint: "Provide a main image for the blog post, displayed on homepage or other parts of the site."}
   - name: "podcast" # Used in routes, e.g., /admin/collections/blog
-    label: "Podcast" # Used in the UI
+    label: "Podcast Episode" # Used in the UI
     folder: "podcasts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     extension: md
