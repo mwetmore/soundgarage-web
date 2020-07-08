@@ -12,7 +12,7 @@ layout: feeds.liquid
 <webMaster>soundgarageio+podcast@gmail.com (Sound Garage)</webMaster>
 <managingEditor>soundgarageio+podcast@gmail.com (Sound Garage)</managingEditor>
 <image>
-<url>https://www.soundgarage.io/img/logo_large.jpg</url>
+<url>https://www.soundgarage.io/img/soundgarageio_logo_final.jpg</url>
 <title>SoundGarage 2020 Logo</title>
 <link>https://www.soundgarage.io</link>
 </image>
@@ -25,7 +25,7 @@ layout: feeds.liquid
 </itunes:category>
 <itunes:keywords>music, records, collecting, audio</itunes:keywords>
 <itunes:explicit>no</itunes:explicit>
-<itunes:image href="https://www.soundgarage.io/img/logo_large.jpg" />
+<itunes:image href="https://www.soundgarage.io/img/soundgarageio_logo_final.jpg" />
 <atom:link href="http://www.soundgarage.io/podcasts/feed.xml" rel="self" type="application/rss+xml" />
 <pubDate>{{ "now" | date: "%a, %d %b %Y %H:%M:%S EST" }}</pubDate>
 <title>SoundGarage</title>
