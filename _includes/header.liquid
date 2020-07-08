@@ -61,9 +61,143 @@
             width: 100%; 
             height: 100%; 
         }
+        #Record{
+    animation-name: record;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+    animation-timing-function: linear;
+}
+#Record_Arm{
+    animation-name: turntable-arm;
+    animation-duration:25s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+@keyframes turntable-arm{
+    0%{
+        transform: rotate(-15deg);
+        transform-origin: top;
+        transform-box: fill-box;
+    }
+    100%{
+        transform: rotate(12deg);
+        transform-origin: top;
+        transform-box: fill-box;
+    }
+}
+@keyframes record {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: center;
+        transform-box: fill-box;
+    }
+    100% {
+        transform: rotate(360deg);
+        transform-origin: center; 
+        transform-box: fill-box;
+    }
+}
+@keyframes star2 {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: center;
+        transform-box: fill-box;
+    }
+    100% {
+        transform: rotate(360deg);
+        transform-origin: center; 
+        transform-box: fill-box;
+           }
+}
     </style>
     <body>
-    <p style="text-align:center;margin-top:5%;margin-bottom:5%;"><img src="/img/logo2.png" alt="SoundGarage Logo" width="20%" height="20%"/></p>
+    <p style="text-align:center;margin-top:5%;margin-bottom:5%;">
+    <svg id="Layer_1" width="300px" height="300px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240.2 258.94">
+    <defs>
+        <style>
+          .cls-1 {
+            font-size: 19px;
+          }
+    
+          .cls-1, .cls-2, .cls-3 {
+            fill: #e65722;
+          }
+    
+          .cls-1, .cls-2 {
+            font-family: DINAlternate-Bold, DIN Alternate;
+            font-weight: 700;
+          }
+    
+          .cls-2 {
+            font-size: 29px;
+          }
+    
+          .cls-4 {
+            fill: #fff;
+          }
+        </style>
+      </defs>
+      <g id="Outer_Logo" data-name="Outer Logo">
+        <text class="cls-1" transform="translate(38.08 205.5) rotate(47.7)">s</text>
+        <text class="cls-1" transform="translate(47.71 215.62) rotate(40.14)">o</text>
+        <text class="cls-1" transform="translate(58.96 224.69) rotate(32.19)">u</text>
+        <text class="cls-1" transform="translate(71.97 232.46) rotate(24)">n</text>
+        <text class="cls-1" transform="translate(85.96 238.3) rotate(15.91)">d</text>
+        <text class="cls-1" transform="translate(100.26 242.02) rotate(8.02)">g</text>
+        <text class="cls-1" transform="translate(114.9 243.74) rotate(0.31)">a</text>
+        <text class="cls-1" transform="matrix(0.99, -0.12, 0.12, 0.99, 129.22, 243.45)">r</text>
+        <text class="cls-1" transform="translate(140.94 241.84) rotate(-13.8)">a</text>
+        <text class="cls-1" transform="translate(154.85 238.09) rotate(-21.67)">g</text>
+        <text class="cls-1" transform="matrix(0.87, -0.49, 0.49, 0.87, 168.46, 232.3)">e</text>
+        <text class="cls-1" transform="matrix(0.81, -0.58, 0.58, 0.81, 180.6, 224.99)">.</text>
+        <text class="cls-1" transform="translate(187.83 219.55) rotate(-40.57)">i</text>
+        <text class="cls-1" transform="translate(194.76 213.45) rotate(-46.82)">o</text>
+        <text class="cls-2" transform="matrix(0.45, -0.89, 0.89, 0.45, 34.96, 102.83)">S</text>
+        <text class="cls-2" transform="translate(43.7 86.11) rotate(-50.75)">O</text>
+        <text class="cls-2" transform="matrix(0.79, -0.62, 0.62, 0.79, 56.42, 70.87)">U</text>
+        <text class="cls-2" transform="translate(72.58 58.37) rotate(-25)">N</text>
+        <text class="cls-2" transform="translate(92.61 49.39) rotate(-11.75)">D</text>
+        <text class="cls-2" transform="translate(112.68 45.5) rotate(0.95)">G</text>
+        <text class="cls-2" transform="matrix(0.97, 0.23, -0.23, 0.97, 132.53, 46.07)">A</text>
+        <text class="cls-2" transform="translate(151.83 50.87) rotate(25.72)">R</text>
+        <text class="cls-2" transform="translate(169.61 59.7) rotate(38.23)">A</text>
+        <text class="cls-2" transform="matrix(0.64, 0.77, -0.77, 0.64, 184.73, 71.84)">G</text>
+        <text class="cls-2" transform="translate(197.19 87.36) rotate(62.24)">E</text>
+        
+        <g id="Circles">
+          <path class="cls-3" d="M3.57,123.33A120.1,120.1,0,0,1,123.66,3.23h0a120.13,120.13,0,0,1,120.11,120.1h0a120.12,120.12,0,0,1-120.11,120.1h0A120.09,120.09,0,0,1,3.57,123.33ZM40,39.65A118,118,0,0,0,5.31,123.33h0A117.94,117.94,0,0,0,40,207h0a117.94,117.94,0,0,0,83.69,34.68h0A118,118,0,0,0,207.35,207h0A118,118,0,0,0,242,123.33h0a118,118,0,0,0-34.67-83.68h0A118,118,0,0,0,123.66,5h0A118,118,0,0,0,40,39.65Z" transform="translate(-3.57 13.65)"/>
+          <path class="cls-3" d="M37.12,123.33a86.54,86.54,0,0,1,86.54-86.54h0a86.55,86.55,0,0,1,86.55,86.54h0a86.56,86.56,0,0,1-86.55,86.55h0a86.55,86.55,0,0,1-86.54-86.55ZM63.7,63.38a84.48,84.48,0,0,0-24.83,60h0a84.51,84.51,0,0,0,24.83,60h0a84.52,84.52,0,0,0,60,24.84h0a84.52,84.52,0,0,0,60-24.84h0a84.52,84.52,0,0,0,24.84-60h0a84.49,84.49,0,0,0-24.84-59.95h0a84.52,84.52,0,0,0-60-24.84h0a84.52,84.52,0,0,0-60,24.84Z" transform="translate(-3.57 13.65)"/>
+        </g>
+        <g id="Stars">
+          <g>
+            <polygon class="cls-3" points="218.13 128.76 219.37 123.79 215.02 121.07 220.13 120.72 221.38 115.74 223.3 120.5 228.41 120.14 224.48 123.43 226.4 128.19 222.06 125.47 218.13 128.76"/>
+            <polygon class="cls-3" points="214.31 179.51 213.09 184.49 217.45 187.19 212.34 187.57 211.11 192.54 209.17 187.8 204.06 188.18 207.97 184.87 206.03 180.12 210.39 182.82 214.31 179.51"/>
+            <polygon class="cls-3" points="223.19 145.35 223.3 150.47 228.21 151.95 223.37 153.64 223.49 158.76 220.38 154.69 215.54 156.38 218.46 152.16 215.36 148.08 220.27 149.56 223.19 145.35"/>
+          </g>
+          <g>
+            <polygon class="cls-3" points="20.78 114.89 18.51 119.49 13.44 118.76 17.11 122.33 14.85 126.93 19.38 124.54 23.06 128.12 22.19 123.07 26.72 120.68 21.65 119.94 20.78 114.89"/>
+            <polygon class="cls-3" points="25.95 177.56 26.44 182.66 21.74 184.71 26.75 185.82 27.25 190.92 29.84 186.5 34.85 187.6 31.45 183.77 34.05 179.35 29.35 181.4 25.95 177.56"/>
+            <polygon class="cls-3" points="17.53 144.76 16.69 149.82 11.62 150.58 16.16 152.94 15.32 158 18.97 154.4 23.52 156.77 21.23 152.18 24.89 148.59 19.82 149.35 17.53 144.76"/>
+          </g>
+        </g>
+      </g>
+      <g id="Record">
+        <circle class="cls-3" cx="120.1" cy="136.98" r="82"/>
+        <ellipse class="cls-4" cx="119.93" cy="137.11" rx="27.18" ry="27.08"/>
+        <g id="Grooves">
+          <path class="cls-4" d="M53.82,128.24a2.21,2.21,0,0,1-.46.08,2.31,2.31,0,0,1-2.55-1.69c-6-31.1,11.86-61.57,44.88-74.14a2.45,2.45,0,0,1,3,1,1.75,1.75,0,0,1-1,2.52C66.39,67.91,49.51,96.77,55.16,126.2h0A1.81,1.81,0,0,1,53.82,128.24Z" transform="translate(-3.57 13.65)"/>
+          <path class="cls-4" d="M65.81,125.22a1.79,1.79,0,0,1-1.35,2,2.63,2.63,0,0,1-.44.09,2.33,2.33,0,0,1-2.55-1.7C56,98.31,71.64,71.5,100.63,60.59a2.46,2.46,0,0,1,2.94,1,1.74,1.74,0,0,1-1,2.52c-27.2,10.22-41.85,35.41-36.75,61.06Z" transform="translate(-3.57 13.65)"/>
+          <path class="cls-4" d="M75.28,125.22A1.76,1.76,0,0,1,74,127.28a2.46,2.46,0,0,1-.39.09A2.31,2.31,0,0,1,71,125.76c-5.42-24.2,8.49-48.2,34.55-57.67a2.42,2.42,0,0,1,2.9,1,1.74,1.74,0,0,1-1,2.47C83.19,80.39,70.24,102.73,75.28,125.22Z" transform="translate(-3.57 13.65)"/>
+        </g>
+      </g>
+      <g id="Record_Arm" data-name="Record Arm">
+        <path class="cls-4" d="M172.67,55.33a4.43,4.43,0,0,1,2.87,1,5.71,5.71,0,0,1,1.89,2.62,36.81,36.81,0,0,1,1.47,4.87c.89,3.26,1.71,6.55,2.52,9.83,1.61,6.58,3,13.2,4.43,19.81l1.09,5,.55,2.48.28,1.23.14.67a6.89,6.89,0,0,1,.14.91,8,8,0,0,1-.54,3.62l-.18.42-.13.3-.27.58-.53,1.15-2.13,4.61-8.55,18.41-4.54-2.11,8.54-18.42,2.14-4.6.53-1.15.27-.57.13-.28.07-.16a3,3,0,0,0,.19-1.36c0-.11,0-.23-.05-.34l-.13-.57-.29-1.24L182,99.48l-1.13-5c-1.54-6.59-3.13-13.17-4.5-19.79-.67-3.32-1.34-6.64-1.93-10a38.38,38.38,0,0,1-.76-5A8.65,8.65,0,0,0,172.67,55.33Z" transform="translate(-3.57 13.65)"/>
+        <rect class="cls-4" x="168.71" y="126.1" width="9.8" height="13.9" rx="2.76" transform="translate(62.22 -43.61) rotate(23)"/>
+    </g>
+     
+    </svg>
+    </p>
     <nav style="text-align:center;">
     {% for nav in settings.navigation.primary_navigation %}       
          {% if forloop.last == true %}
